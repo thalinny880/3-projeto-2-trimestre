@@ -1,31 +1,35 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #e6f4ea;
+    --cor-principal: rgba(195, 230, 203, 0.95); /* fundo da caixa com transparência */
+    --cor-secundaria: #88b889;
+    --cor-destaque: #4f9153;
+    --cor-texto: #2e3b2e;
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background: url('https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+    background-size: cover;
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(79, 145, 83, 0.3);
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+    margin-bottom: 20px;
 }
 
 button {
@@ -34,10 +38,15 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
+    margin-top: 10px;
     transition: background-color 0.3s;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: #ffffff;
 }
